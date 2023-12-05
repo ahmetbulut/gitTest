@@ -1,3 +1,3 @@
 # this is a mock example.
 def mock():
-    pass
+    print("Hello World!")
