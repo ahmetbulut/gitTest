@@ -9,7 +9,13 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(None, mock())  # add assertion here
 
     def test_IdontWannaFollowAnyConventions(self):
+        #complicated X
+        #complicated Y
+        #...
+        #if something is not right:
         raise AssertionError("Hello World!")
+        #else:
+        #pass
 
 if __name__ == '__main__':
     unittest.main()
