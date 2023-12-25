@@ -22,3 +22,9 @@ jobs:
           pip3.9 install -r requirements.txt
       - name: Test with unittest
         run: python3.9 -m unittest
+
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy
+        run: python3.9 -m main.py
