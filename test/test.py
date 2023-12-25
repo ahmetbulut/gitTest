@@ -15,7 +15,7 @@ class MyTestCase(unittest.TestCase):
         #if something is not right:
         #raise AssertionError("Hello World!")
         #else:
-        #pass
+        pass
 
 if __name__ == '__main__':
     unittest.main()
