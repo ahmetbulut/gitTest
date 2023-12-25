@@ -1,14 +1,10 @@
-name: Testing
+name: Deployment
 on:
   push:
     branches:
       - master
-  pull_request:
-    branches:
-      - master
 
-jobs:
-  build:
+  deployment:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -20,5 +16,5 @@ jobs:
         run: |
           python3.9 -m pip install --upgrade pip
           pip3.9 install -r requirements.txt
-      - name: Test with unittest
-        run: python3.9 -m unittest
+      - name: deploy
+        run: python3.9 main.py
