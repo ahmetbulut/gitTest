@@ -13,7 +13,7 @@ class MyTestCase(unittest.TestCase):
         #complicated Y
         #...
         #if something is not right:
-        raise AssertionError("Hello World!")
+        #raise AssertionError("Hello World!")
         #else:
         #pass
 
